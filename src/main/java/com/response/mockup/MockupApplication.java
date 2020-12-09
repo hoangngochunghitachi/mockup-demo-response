@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,6 +14,7 @@ import com.response.mockup.dto.OutputRestDTO;
 
 @SpringBootApplication
 @RestController
+@CrossOrigin(maxAge = 3600)
 public class MockupApplication {
 
     public static void main(String[] args) {
